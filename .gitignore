@@ -1,2 +1,4 @@
 .python-version 
 *.log 
+secrets.json 
+jsonFileFromGoogle.json

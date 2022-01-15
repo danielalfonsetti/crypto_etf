@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# run covid-19 files 
+# git add, comit and push
+
+# https://towardsdatascience.com/a-step-by-step-guide-to-scheduling-tasks-for-your-data-science-project-d7df4531fc41#bfcb
+# Papermill is a tool for parameterizing and executing Jupyter Notebooks. I can use this to run a Jupyter Notebook file in a cron and launchd job file.
+# Install in current python environment with `pip3 install papermill`
+# papermill --help
+
+# terminal-notifier is a command-line tool to send macOS User Notifications. I will use this to notify me when the scheduled job is done.
+# brew install terminal-notifier
+# terminal-notifier -help
+
+# Other docs: https://www.wrighters.io/parameters-jupyter-notebooks-with-papermill/
+
+
+pyenv activate venv_coinmarketcap_scanner # probably not necessary if we already have something in .python-version?
+papermill coinmarketcap_scanner.ipynb ./output/
+git add . 
+git commit -m "update" 
+git push
+terminal-notifier -title "Coin Market Cap Scanner" -subtitle "Daily Update" -message "Completed"
+now=$(date)
+echo "launchd update completed at $now"

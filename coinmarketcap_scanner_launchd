@@ -28,6 +28,8 @@
 # brew install terminal-notifier
 # terminal-notifier -help
 
+
+# If you run into issues, make sure your pfile is good with - plutil (ships with MacOS)
 # Other docs: https://www.wrighters.io/parameters-jupyter-notebooks-with-papermill/
 
 

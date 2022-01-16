@@ -26,6 +26,8 @@
 # $ launchctl help
 
 
+# If you make any changes to the script or plist, make sure you unload and load the plist.
+
 # https://towardsdatascience.com/a-step-by-step-guide-to-scheduling-tasks-for-your-data-science-project-d7df4531fc41#bfcb
 # Papermill is a tool for parameterizing and executing Jupyter Notebooks. I can use this to run a Jupyter Notebook file in a cron or launchd job file.
 # Install in current python environment with `pip3 install papermill`

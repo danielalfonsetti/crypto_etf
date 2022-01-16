@@ -2,4 +2,3 @@
 *.log 
 secrets.json 
 jsonFileFromGoogle.json
-output/

@@ -15,7 +15,6 @@
 # $ launchctl stop coinmarketcap_scanner
 
 
-### When do you need to run these?
 # load the job
 # $ launchctl load /Users/daniel/Library/LaunchAgents/coinmarketcap_scanner.plist
 
@@ -24,6 +23,12 @@
 
 # get help
 # $ launchctl help
+
+# Debugging after a change to the plist file: 
+# $ launchctl unload /Users/daniel/Library/LaunchAgents/coinmarketcap_scanner.plist
+# $ launchctl load /Users/daniel/Library/LaunchAgents/coinmarketcap_scanner.plist
+# $ launchctl start coinmarketcap_scanner
+#
 
 
 # If you make any changes to the script or plist, make sure you unload and load the plist.
@@ -44,7 +49,7 @@
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-# pyenv activate venv_coinmarketcap_scanner # Note: We have to source this launchd program - https://askubuntu.com/questions/965475/cannot-activate-virtual-environment-with-a-shell-script
+pyenv activate venv_coinmarketcap_scanner # Note: We have to source this launchd program - https://askubuntu.com/questions/965475/cannot-activate-virtual-environment-with-a-shell-script
 papermill coinmarketcap_scanner.ipynb ./output/output.ipynb
 git add . 
 git commit -m "update" 

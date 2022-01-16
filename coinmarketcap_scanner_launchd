@@ -17,10 +17,10 @@
 
 ### When do you need to run these?
 # load the job
-# $ launchctl load Users/daniel/Library/LaunchAgents/coinmarketcap_scanner.plist
+# $ launchctl load /Users/daniel/Library/LaunchAgents/coinmarketcap_scanner.plist
 
 # unload the job
-# $ launchctl unload Users/daniel/Library/LaunchAgents/coinmarketcap_scanner.plist
+# $ launchctl unload /Users/daniel/Library/LaunchAgents/coinmarketcap_scanner.plist
 
 # get help
 # $ launchctl help

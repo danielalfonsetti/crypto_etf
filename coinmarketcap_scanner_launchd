@@ -42,8 +42,8 @@
 # Other docs: https://www.wrighters.io/parameters-jupyter-notebooks-with-papermill/
 
 
-cd "$(dirname "${BASH_SOURCE[0]}")"
-pyenv activate venv_coinmarketcap_scanner # Not necessary if iwe are calling this bash script from within this folder
+# cd "$(dirname "${BASH_SOURCE[0]}")"
+# pyenv activate venv_coinmarketcap_scanner # Not necessary if iwe are calling this bash script from within this folder
 papermill coinmarketcap_scanner.ipynb ./output/output.ipynb
 git add . 
 git commit -m "update" 

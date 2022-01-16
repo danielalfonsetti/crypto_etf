@@ -2,7 +2,7 @@
 # run covid-19 files 
 # git add, comit and push
 
-# launchd is built into macOS and is an alternative to cron
+# launchd is built into macOS and is an alternative to linux's cron
 # .plist for launchd is at ~/Library/LaunchAgents/coinmarketcap_scanner.plist
 
 # $ launchctl list | grep coinmarketcap_scanner
@@ -20,7 +20,7 @@
 
 
 # https://towardsdatascience.com/a-step-by-step-guide-to-scheduling-tasks-for-your-data-science-project-d7df4531fc41#bfcb
-# Papermill is a tool for parameterizing and executing Jupyter Notebooks. I can use this to run a Jupyter Notebook file in a cron and launchd job file.
+# Papermill is a tool for parameterizing and executing Jupyter Notebooks. I can use this to run a Jupyter Notebook file in a cron or launchd job file.
 # Install in current python environment with `pip3 install papermill`
 # papermill --help
 
